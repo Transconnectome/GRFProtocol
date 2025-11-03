@@ -1,5 +1,5 @@
 # A more comprehensive and reliable analysis of individual differences with generalized random forest: validation and guidelines      
-Jinwoo Lee*, Junghoon Justin Park*, Maria Pak*, Seung Yun Choi*, Jiook Cha†
+Jinwoo Lee*, Junghoon Justin Park*, Maria Pak*, Seung Yun Choi*, Jiook Cha†          
 *equally contributed; †corresponding author   
 
 
