@@ -24,6 +24,7 @@ The data that support the findings of real-world tutorial analyses in this paper
 ## Guided Tour for Analysis Scripts 
 Our analysis pipeline is organized into two main directories based on the analysis type: `01_simulation` and `02_real-world-tutorial`. The `01_simulation` directory contains simulation and analysis code for both seed ensemble (`01-A_seed-ensemble`) and backward elimination (`01-B_backward-elimination`). The overall tree structure of our working directory is as follows:
 
+```text
 .
 ├── 01_simulation                                               # the coding
 │   ├── 01-A_seed-ensemble
@@ -65,6 +66,7 @@ Our analysis pipeline is organized into two main directories based on the analys
     │   └── GRFProtocol_real-world-dataset_pped-by-JW_for-appendixB.csv
     └── results
         └── complete.RData
+```
 
 
 
