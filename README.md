@@ -8,13 +8,13 @@ Jinwoo Lee*, Junghoon Justin Park*, Maria Pak*, Seung Yun Choi*, Jiook Cha†
 - **Preprint:** [https://doi.org/10.1101/2025.10.28.685232](https://doi.org/10.1101/2025.10.28.685232)
 
 
-## Abstract
-Analyzing individual differences in treatment or exposure effects is a central challenge in psychology and behavioral sciences. Conventional statistical models have focused on average treatment effects, overlooking individual variability, and struggling to identify key moderators. Generalized Random Forest (GRF) can predict individualized treatment effects, but current implementations suffer from two critical limitations: (1) prediction performances vary substantially across random initializations, and (2) identification of key moderator is limited in high-dimensional settings. Here, we introduce two methodological advances to address these issues. First, a seed ensemble strategy stabilizes predictions by aggregating models trained under different random initializations. Second, a backward elimination procedure systematically identifies key moderators from high-dimensional inputs. Simulation analyses across diverse scenarios demonstrate that our approach achieves reliable and valid predictions across random seeds, improved performance in moderator identification, and robust generalization to independent data. To facilitate adoption and interpretation, we provide step-by-step guidance using large-scale neuroimaging dataset (*N* = 8,778) with reusable code. These enhancements make GRF more reliable for modeling individual differences in treatment effects, supporting data-driven hypothesis generation, and identification of responsive subgroups.
-
-
 <p align="center">
   <img src="thumbnail.png" alt="Thumbnail" width="800">
 </p>
+
+
+## Abstract
+Analyzing individual differences in treatment or exposure effects is a central challenge in psychology and behavioral sciences. Conventional statistical models have focused on average treatment effects, overlooking individual variability, and struggling to identify key moderators. Generalized Random Forest (GRF) can predict individualized treatment effects, but current implementations suffer from two critical limitations: (1) prediction performances vary substantially across random initializations, and (2) identification of key moderator is limited in high-dimensional settings. Here, we introduce two methodological advances to address these issues. First, a seed ensemble strategy stabilizes predictions by aggregating models trained under different random initializations. Second, a backward elimination procedure systematically identifies key moderators from high-dimensional inputs. Simulation analyses across diverse scenarios demonstrate that our approach achieves reliable and valid predictions across random seeds, improved performance in moderator identification, and robust generalization to independent data. To facilitate adoption and interpretation, we provide step-by-step guidance using large-scale neuroimaging dataset (*N* = 8,778) with reusable code. These enhancements make GRF more reliable for modeling individual differences in treatment effects, supporting data-driven hypothesis generation, and identification of responsive subgroups.
 
 
 ## Data Availiability  
