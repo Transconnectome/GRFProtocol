@@ -74,7 +74,7 @@ Lee, J., Park, J. J., Pak, M., Choi, S. Y., & Cha, J. (2025). A more comprehensi
   journal   = {bioRxiv},
   year      = {2025},
   pages     = {2025-10},
-  doi       = {},
+  doi       = {https://doi.org/10.1101/2025.10.28.685232},
   url       = {https://doi.org/10.1101/2025.10.28.685232},
   note      = {Preprint}
 }
