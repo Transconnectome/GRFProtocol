@@ -22,7 +22,50 @@ The data that support the findings of real-world tutorial analyses in this paper
 
 
 ## Guided Tour for Analysis Scripts 
-*(TBD)*
+Our analysis pipeline is organized into two main directories based on the analysis type: `01_simulation` and `02_real-world-tutorial`. The `01_simulation` directory contains simulation and analysis code for both seed ensemble (`01-A_seed-ensemble`) and backward elimination (`01-B_backward-elimination`). The overall tree structure of our working directory is as follows:
+
+.
+├── 01_simulation                                               # the coding
+│   ├── 01-A_seed-ensemble
+│   │   ├── 01-A-1_data-simulation.R
+│   │   ├── 01-A-2_calibration-comparison.R
+│   │   ├── 01-A-3_grid-analysis.R
+│   │   ├── 01-A-4_ITE-prediction-comparison.R
+│   │   ├── data
+│   │   │   └── datasets.RData
+│   │   └── results
+│   │       ├── calibration-comparison-results.csv
+│   │       ├── grid-analysis-results_data_lin_strong.csv
+│   │       ├── grid-analysis-results_data_lin_weak.csv
+│   │       ├── grid-analysis-results_data_nonlin_strong.csv
+│   │       └── grid-analysis-results_data_nonlin_weak.csv
+│   │
+│   └── 01-B_backward-elimination
+│       ├── 01-B-1_test-set-simulation.R
+│       ├── 01-B-2_linear-ours.R
+│       ├── 01-B-3_nonlinear-ours.R
+│       ├── 01-B-4_linear-top10control.R
+│       ├── 01-B-5_nonlinear-top10control.R
+│       ├── data
+│       │   ├── test_lin_weak.csv
+│       │   └── test_nonlin_weak.csv
+│       └── results
+│           ├── lin_ours.RData
+│           ├── lin_top10.RData
+│           ├── nonlin_ours.RData
+│           └── nonlin_top10.RData
+│
+└── 02_real-world-tutorial
+    ├── 02-1_data-preprocessing.R
+    ├── 02-2_main-analysis.R
+    ├── 02-3_analysis-for-appendix-B.R
+    ├── data
+    │   ├── GRF Protocol Release5.1_new.csv
+    │   ├── GRFProtocol_real-world-dataset_pped-by-JW.csv
+    │   └── GRFProtocol_real-world-dataset_pped-by-JW_for-appendixB.csv
+    └── results
+        └── complete.RData
+
 
 
 ## Citation
