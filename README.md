@@ -1,15 +1,15 @@
 # A more comprehensive and reliable analysis of individual differences with generalized random forest: validation and guidelines      
 Jinwoo Lee*, Junghoon Justin Park*, Maria Pak*, Seung Yun Choi*, Jiook Cha†
-* equally contributed; † corresponding author   
+*equally contributed; †corresponding author   
 
-This repo was written by     
-**Jinwoo Lee** (https://jinwoo-lee.com)     
 
+**Contact about Manuscript**: Jiook Cha, PhD (connectome@snu.ac.kr)   
+**Contact about Repository**: Jinwoo Lee, MS (jil527@ucsd.edu)     
 **Preprint:** [https://doi.org/10.1101/2025.10.28.685232](https://doi.org/10.1101/2025.10.28.685232)
+
 
 ## Abstract
 Analyzing individual differences in treatment or exposure effects is a central challenge in psychology and behavioral sciences. Conventional statistical models have focused on average treatment effects, overlooking individual variability, and struggling to identify key moderators. Generalized Random Forest (GRF) can predict individualized treatment effects, but current implementations suffer from two critical limitations: (1) prediction performances vary substantially across random initializations, and (2) identification of key moderator is limited in high-dimensional settings. Here, we introduce two methodological advances to address these issues. First, a seed ensemble strategy stabilizes predictions by aggregating models trained under different random initializations. Second, a backward elimination procedure systematically identifies key moderators from high-dimensional inputs. Simulation analyses across diverse scenarios demonstrate that our approach achieves reliable and valid predictions across random seeds, improved performance in moderator identification, and robust generalization to independent data. To facilitate adoption and interpretation, we provide step-by-step guidance using large-scale neuroimaging dataset (*N* = 8,778) with reusable code. These enhancements make GRF more reliable for modeling individual differences in treatment effects, supporting data-driven hypothesis generation, and identification of responsive subgroups.
-
 
 
 ## Data Availiability  
@@ -18,6 +18,7 @@ The data that support the findings of real-world tutorial analyses in this paper
 
 ## Guided Tour for Analysis Scripts 
 *(TBD)*
+
 
 ## Citation
 If you use this repository in your research, please cite the following preprint:
@@ -35,5 +36,3 @@ Lee, J., Park, J. J., Pak, M., Choi, S. Y., & Cha, J. (2025). A more comprehensi
   url       = {https://doi.org/10.1101/2025.10.28.685232},
   note      = {Preprint}
 }
-
-
