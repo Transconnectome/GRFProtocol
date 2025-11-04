@@ -2,8 +2,8 @@
 Jinwoo Lee*, Junghoon Justin Park*, Maria Pak*, Seung Yun Choi*, Jiook Cha†          
 *equally contributed; †corresponding author      
 
-- **Contact about Manuscript**: Jiook Cha, PhD (connectome@snu.ac.kr | [connectomelab.com](connectomelab.com))      
-- **Contact about Repository**: Jinwoo Lee, MS (jil527@ucsd.edu | [jinwoo-lee.com](jinwoo-lee.com))         
+- **Contact about Manuscript**: Jiook Cha, PhD (connectome@snu.ac.kr | [connectomelab.com](https://www.connectomelab.com))      
+- **Contact about Repository**: Jinwoo Lee, MS (jil527@ucsd.edu | [jinwoo-lee.com](https://jinwoo-lee.com))         
 - **Preprint:** [https://doi.org/10.1101/2025.10.28.685232](https://doi.org/10.1101/2025.10.28.685232)    
 
 
