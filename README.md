@@ -1,11 +1,10 @@
 # A more comprehensive and reliable analysis of individual differences with generalized random forest: validation and guidelines      
 Jinwoo Lee*, Junghoon Justin Park*, Maria Pak*, Seung Yun Choi*, Jiook Cha†          
-*equally contributed; †corresponding author   
+*equally contributed; †corresponding author      
 
-
-- **Contact about Manuscript**: Jiook Cha, PhD (connectome@snu.ac.kr)   
-- **Contact about Repository**: Jinwoo Lee, MS (jil527@ucsd.edu)     
-- **Preprint:** [https://doi.org/10.1101/2025.10.28.685232](https://doi.org/10.1101/2025.10.28.685232)
+- **Contact about Manuscript**: Jiook Cha, PhD (connectome@snu.ac.kr | [connectomelab.com](connectomelab.com))      
+- **Contact about Repository**: Jinwoo Lee, MS (jil527@ucsd.edu | [jinwoo-lee.com](jinwoo-lee.com))         
+- **Preprint:** [https://doi.org/10.1101/2025.10.28.685232](https://doi.org/10.1101/2025.10.28.685232)    
 
 
 <p align="center">
@@ -27,14 +26,21 @@ Our analysis pipeline is organized into two main directories based on the analys
 ```text
 .
 ├── 01_simulation                                               # the lv.1 directory for the Ch. 'Current Limitations and Proposed Suggestions'
-│   ├── train-test-simulation.R                                 # simulation script for (lin, weak)/(lin, strong)/(nonlin, weak)/(non, strong) simulation train/test-sets
-│   ├── data (not shared)                                       # the lv.1 directory that includes simulated datasets
+│   ├── train-data-simulation.R                                 # simulation script for train set in (lin, weak)/(lin, strong)/(nonlin, weak)/(non, strong) conditions using ABCD covariates
+│   ├── test-data-simulation.R                                  # simulation script for test set in (lin, weak)/(nonlin, weak) conditions using ABCD covariates
+│   ├── data (not shared)                                       # the lv.2 directory that includes simulated datasets (not shared; contained ABCD dataset)
+│   │   ├── train_nonlin_strong.csv                             # simulated train-set with a (nonlin, strong) condition
+│   │   ├── train_nonlin_weak.csv                               # simulated train-set with a (nonlin, weak) condition
+│   │   ├── train_lin_strong.csv                                # simulated train-set with a (lin, strong) condition
+│   │   ├── train_lin_weak.csv                                  # simulated train-set with a (lin, weak) condition
+│   │   ├── test_nonlin_weak.csv                                # simulated test-set with a (nonlin, weak) condition
+│   │   └── test_lin_weak.csv                                   # simulated test-set with a (lin, weak) condition
 │   │
 │   ├── 01-A_seed-ensemble                                      # the lv.2 directory for the 'Toward more reliable framework' section & Fig 2
 │   │   ├── 01-A-1_calibration-comparison.R                     # analysis script for Fig 2a and 2b
 │   │   ├── 01-A-2_grid-analysis.R                              # analysis script for Fig 2c
 │   │   ├── 01-A-3_ITE-prediction-comparison.R                  # analysis script for Fig 2d
-│   │   └── results
+│   │   └── results                                             # required to perform the 01-A-3 script
 │   │       ├── calibration-comparison-results.csv              # Detailed statistics for Fig 2a and 2b
 │   │       ├── grid-analysis-results_data_lin_strong.csv       # Detailed statistics for grid analysis with (lin, strong) dataset; see Appendix A
 │   │       ├── grid-analysis-results_data_lin_weak.csv         # Detailed statistics for grid analysis with (lin, weak) dataset; see Appendix A
