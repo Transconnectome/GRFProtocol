@@ -21,19 +21,19 @@ Analyzing individual differences in treatment or exposure effects is a central c
 The data that support the findings of real-world tutorial analyses in this paper are available from the **Adolescent Brain Cognitive Development (ABCD) Study** via the National Institute of Mental Health Data Archive (NDA; [https://nda.nih.gov/abcd/request-access](https://nda.nih.gov/abcd/request-access)) upon formal application and approval by the ABCD consortium. 
 
 
-## Guided Tour for Analysis Scripts 
+## Scripts 
 Our analysis pipeline is organized into two main directories based on the analysis type: `01_simulation` and `02_real-world-tutorial`. The `01_simulation` directory contains simulation and analysis code for both seed ensemble (`01-A_seed-ensemble`) and backward elimination (`01-B_backward-elimination`). The overall tree structure of our working directory is as follows:
 
 ```text
 .
 ├── 01_simulation                                               # the lv.1 directory for the Ch. 'Current Limitations and Proposed Suggestions'
+│   ├── train-test-simulation.R                                 # simulation script for (lin, weak)/(lin, strong)/(nonlin, weak)/(non, strong) simulation train/test-sets
+│   ├── data (not shared)                                       # the lv.1 directory that includes simulated datasets
+│   │
 │   ├── 01-A_seed-ensemble                                      # the lv.2 directory for the 'Toward more reliable framework' section & Fig 2
-│   │   ├── 01-A-1_data-simulation.R                            # simulation script for (lin, weak)/(lin, strong)/(nonlin, weak)/(non, strong) simulation sets based on ABCD Dataset
-│   │   ├── 01-A-2_calibration-comparison.R                     # analysis script for Fig 2a and 2b
-│   │   ├── 01-A-3_grid-analysis.R                              # analysis script for Fig 2c
-│   │   ├── 01-A-4_ITE-prediction-comparison.R                  # analysis script for Fig 2d
-│   │   ├── data (not shared)
-│   │   │   └── datasets.RData                                  # simulated dataset (not shared; contained ABCD dataset)
+│   │   ├── 01-A-1_calibration-comparison.R                     # analysis script for Fig 2a and 2b
+│   │   ├── 01-A-2_grid-analysis.R                              # analysis script for Fig 2c
+│   │   ├── 01-A-3_ITE-prediction-comparison.R                  # analysis script for Fig 2d
 │   │   └── results
 │   │       ├── calibration-comparison-results.csv              # Detailed statistics for Fig 2a and 2b
 │   │       ├── grid-analysis-results_data_lin_strong.csv       # Detailed statistics for grid analysis with (lin, strong) dataset; see Appendix A
@@ -42,14 +42,10 @@ Our analysis pipeline is organized into two main directories based on the analys
 │   │       └── grid-analysis-results_data_nonlin_weak.csv      # Detailed statistics for grid analysis with (nonlin, weak) dataset; see Fig 2c
 │   │
 │   └── 01-B_backward-elimination                               # the lv.2 directory for the 'Toward more comprehensive framework' section & Fig 3
-│       ├── 01-B-1_test-set-simulation.R                        # simulation script for test set of (lin, weak)/(nonlin, weak) conditions based on ABCD Dataset
-│       ├── 01-B-2_linear-ours.R                                # analysis script applying backward elimination for train and test (lin, weak) datasets
-│       ├── 01-B-3_nonlinear-ours.R                             # analysis script applying backward elimination for train and test (nonlin, weak) datasets
-│       ├── 01-B-4_linear-top10control.R                        # analysis script applying top10% heuristic for train (lin, weak) dataset
-│       ├── 01-B-5_nonlinear-top10control.R                     # analysis script applying top10% heuristic for train (nonlin, weak) dataset
-│       └── data (not shared)
-│           ├── test_lin_weak.csv                               # simulated test dataset (not shared; contained ABCD dataset)
-│           └── test_nonlin_weak.csv                            # simulated test dataset (not shared; contained ABCD dataset)
+│       ├── 01-B-1_linear-ours.R                                # analysis script applying backward elimination for train and test (lin, weak) datasets
+│       ├── 01-B-2_nonlinear-ours.R                             # analysis script applying backward elimination for train and test (nonlin, weak) datasets
+│       ├── 01-B-3_linear-top10control.R                        # analysis script applying top10% heuristic for train (lin, weak) dataset
+│       └── 01-B-4_nonlinear-top10control.R                     # analysis script applying top10% heuristic for train (nonlin, weak) dataset
 │
 └── 02_real-world-tutorial                                                    # the lv.1 directory for the Ch. 'Tutorial with Real-world Dataset'
     ├── 02-1_data-preprocessing.R                                             # preprocessing script for real ABCD dataset
